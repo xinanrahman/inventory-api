@@ -19,5 +19,6 @@ from api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('items/', views.ItemAPIView.as_view())
+    path('items/', views.ItemAPIView.as_view()),
+    path('item/<int:pk>/', views.ItemDetailView.as_view())
 ]
